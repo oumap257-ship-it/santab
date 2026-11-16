@@ -1,0 +1,1152 @@
+```html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa Barbara Resort | Webuye, Kenya</title>
+    <meta name="description" content="Experience serene hospitality, cozy B&B accommodations, a lively bar & restaurant, outdoor gazebo bar, and lush gardens at Santa Barbara Resort in Webuye, Kenya. Call 0769 925 119.">
+    
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        terracotta: {
+                            DEFAULT: '#C85A32',
+                            light: '#E07A5F',
+                            dark: '#9A3F1B'
+                        },
+                        sand: {
+                            DEFAULT: '#FDF8F2',
+                            dark: '#F4ECE1'
+                        },
+                        warmdark: '#2B211E',
+                        accent: '#D4A373'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-sand text-warmdark font-sans antialiased selection:bg-terracotta selection:text-white">
+
+    <!-- TOP NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-40 bg-sand/90 backdrop-blur-md border-b border-stone-300/60 shadow-xs transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-2xl bg-terracotta text-white flex items-center justify-center shadow-md group-hover:bg-terracotta-dark transition-colors">
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="block font-serif text-lg sm:text-xl font-bold text-warmdark leading-tight tracking-tight">Santa Barbara</span>
+                        <span class="block text-[11px] uppercase tracking-[0.2em] text-terracotta font-bold">Resort • Webuye</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-warmdark/90">
+                    <a href="#about" class="hover:text-terracotta transition-colors">About Us</a>
+                    <a href="#accommodation" class="hover:text-terracotta transition-colors">Accommodation</a>
+                    <a href="#dining" class="hover:text-terracotta transition-colors">Bar &amp; Restaurant</a>
+                    <a href="#gazebo" class="hover:text-terracotta transition-colors">Outdoor Gazebo</a>
+                    <a href="#lounge" class="hover:text-terracotta transition-colors">Lounge</a>
+                    <a href="#gallery" class="hover:text-terracotta transition-colors">Gallery</a>
+                    <a href="#contact" class="hover:text-terracotta transition-colors">Contact</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="tel:+254769925119" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-terracotta/30 text-terracotta font-semibold text-sm hover:bg-terracotta/5 transition-colors">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <span>0769 925 119</span>
+                    </a>
+                    <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-terracotta text-white font-semibold text-sm shadow-md hover:bg-terracotta-dark transition-all">
+                        Book Now
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobile-menu-btn" aria-label="Toggle Menu" class="lg:hidden p-2.5 rounded-xl text-terracotta hover:bg-stone-200/60 focus:outline-none">
+                    <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-sand border-t border-stone-300 px-4 pt-3 pb-6 space-y-2 shadow-xl">
+            <a href="#about" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-warmdark hover:bg-sand-dark hover:text-terracotta">About Us</a>
+            <a href="#accommodation" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-warmdark hover:bg-sand-dark hover:text-terracotta">Accommodation &amp; B&amp;B</a>
+            <a href="#dining" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-warmdark hover:bg-sand-dark hover:text-terracotta">Bar &amp; Restaurant</a>
+            <a href="#gazebo" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-warmdark hover:bg-sand-dark hover:text-terracotta">Outdoor Gazebo Bar</a>
+            <a href="#lounge" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-warmdark hover:bg-sand-dark hover:text-terracotta">Lounge &amp; Dining Room</a>
+            <a href="#gallery" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-warmdark hover:bg-sand-dark hover:text-terracotta">Photo Gallery</a>
+            <a href="#contact" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-warmdark hover:bg-sand-dark hover:text-terracotta">Contact &amp; Booking</a>
+            <div class="pt-3 grid grid-cols-1 sm:grid-cols-2 gap-3 border-t border-stone-300">
+                <a href="tel:+254769925119" class="flex items-center justify-center gap-2 px-4 py-3 rounded-xl border border-terracotta text-terracotta font-semibold text-sm">
+                    <span>Call 0769 925 119</span>
+                </a>
+                <a href="#contact" class="mobile-link flex items-center justify-center px-4 py-3 rounded-xl bg-terracotta text-white font-semibold text-sm">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. HERO SECTION (images/1000055291.jpeg) -->
+    <section id="home" class="relative min-h-[92vh] flex items-center pt-20 overflow-hidden bg-warmdark">
+        <img 
+            src="images/1000055291.jpeg" 
+            data-photo-key="1000055291.jpeg"
+            alt="Santa Barbara Resort Lush Grounds and Peach Building in Webuye" 
+            onerror="handleImgError(this, 'images/1000055291.jpeg', 'Resort Grounds & Main Exterior')"
+            class="absolute inset-0 w-full h-full object-cover object-center scale-105 transition-all duration-700 opacity-80"
+        >
+        <!-- Warm Terracotta & Dark Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-warmdark/95 via-warmdark/75 to-transparent pointer-events-none"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-warmdark/90 via-transparent to-black/30 pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 w-full">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-accent/40 text-sand text-xs sm:text-sm font-semibold tracking-wider uppercase mb-6">
+                    <span class="w-2 h-2 rounded-full bg-accent"></span>
+                    Premier Hospitality &amp; B&amp;B in Webuye, Kenya
+                </div>
+                
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.12] tracking-tight mb-6">
+                    Welcome to Santa Barbara Resort Webuye
+                </h1>
+                
+                <p class="text-stone-200 text-base sm:text-lg leading-relaxed max-w-2xl mb-9">
+                    Discover a tranquil paradise featuring comfortable B&amp;B accommodations, a premier bar &amp; restaurant, outdoor gazebo bar, and lush manicured lawns right here in Webuye. Call us at <strong class="text-white font-semibold">0769 925 119</strong>.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                    <a href="#contact" class="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl bg-terracotta hover:bg-terracotta-dark text-white font-bold text-base shadow-xl shadow-black/25 transition-all">
+                        <span>Book a Stay or Table</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                    
+                    <a href="tel:+254769925119" class="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl bg-white/15 hover:bg-white/25 backdrop-blur-md border border-white/30 text-white font-semibold text-base transition-all">
+                        <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <span>Call 0769 925 119</span>
+                    </a>
+                </div>
+
+                <!-- Key Highlights Badges -->
+                <div class="mt-12 pt-8 border-t border-white/15 grid grid-cols-2 sm:grid-cols-4 gap-6 text-white">
+                    <div>
+                        <span class="block text-accent font-serif text-2xl font-bold">Resort B&amp;B</span>
+                        <span class="text-xs sm:text-sm text-stone-300">Cozy Rooms</span>
+                    </div>
+                    <div>
+                        <span class="block text-accent font-serif text-2xl font-bold">Bar &amp; Grill</span>
+                        <span class="text-xs sm:text-sm text-stone-300">Dining &amp; Drinks</span>
+                    </div>
+                    <div>
+                        <span class="block text-accent font-serif text-2xl font-bold">Gazebo Bar</span>
+                        <span class="text-xs sm:text-sm text-stone-300">Outdoor Chill</span>
+                    </div>
+                    <div>
+                        <span class="block text-accent font-serif text-2xl font-bold">Lawns</span>
+                        <span class="text-xs sm:text-sm text-stone-300">Gardens &amp; Events</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT US & SIGNAGE (images/1000055292.jpeg & images/1000055290.jpeg) -->
+    <section id="about" class="py-20 sm:py-28 bg-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] bg-warmdark/10">
+                        <img 
+                            src="images/1000055292.jpeg" 
+                            data-photo-key="1000055292.jpeg"
+                            alt="Santa Barbara Resort Signage: Resort B&B, Bar & Restaurant, Accommodations" 
+                            onerror="handleImgError(this, 'images/1000055292.jpeg', 'Resort Directional Signage')"
+                            class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
+                        >
+                    </div>
+                    <div class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[16/9] bg-warmdark/10">
+                        <img 
+                            src="images/1000055290.jpeg" 
+                            data-photo-key="1000055290.jpeg"
+                            alt="Santa Barbara Resort Main Building and Front Lawn in Webuye" 
+                            onerror="handleImgError(this, 'images/1000055290.jpeg', 'Main Building & Veranda')"
+                            class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
+                        >
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <span class="inline-block text-xs font-bold uppercase tracking-[0.2em] text-terracotta mb-3">About Santa Barbara Resort</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-warmdark leading-tight mb-6">
+                        Your Ultimate Relaxation &amp; Dining Haven in Webuye
+                    </h2>
+                    <p class="text-warmdark/85 text-base sm:text-lg leading-relaxed mb-5">
+                        Located conveniently in Webuye, Bungoma County, <strong>Santa Barbara Resort</strong> is renowned for its distinctive peach-and-terracotta architecture, expansive green lawns, and exceptional hospitality.
+                    </p>
+                    <p class="text-warmdark/75 text-base leading-relaxed mb-8">
+                        Whether you are traveling for business, stopping over along the highway, or looking for a peaceful weekend getaway with family and friends, our resort offers fully equipped B&amp;B accommodation, a well-stocked bar, and mouthwatering local and continental cuisine.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-start gap-3.5 bg-white p-4 rounded-2xl shadow-sm border border-stone-200">
+                            <div class="w-10 h-10 rounded-xl bg-terracotta/10 text-terracotta flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-warmdark text-sm">Resort B&amp;B Stays</h3>
+                                <p class="text-xs text-warmdark/70 mt-0.5">Clean, peaceful rooms with breakfast included.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 bg-white p-4 rounded-2xl shadow-sm border border-stone-200">
+                            <div class="w-10 h-10 rounded-xl bg-terracotta/10 text-terracotta flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-warmdark text-sm">24/7 Front Desk &amp; Bar</h3>
+                                <p class="text-xs text-warmdark/70 mt-0.5">Always open to serve you day or night.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. ACCOMMODATION & B&B -->
+    <section id="accommodation" class="py-20 sm:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="inline-block text-xs font-bold uppercase tracking-[0.2em] text-terracotta mb-3">Accommodation &amp; B&amp;B</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-warmdark mb-4">
+                    Cozy Rooms &amp; Bed &amp; Breakfast Packages
+                </h2>
+                <p class="text-warmdark/75 text-base sm:text-lg">
+                    Relax in our well-appointed rooms designed with comfort, tranquility, and modern amenities in mind.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-sand rounded-3xl p-8 border border-stone-200 flex flex-col justify-between hover:shadow-xl transition-shadow">
+                    <div>
+                        <span class="inline-block px-3 py-1 rounded-full bg-terracotta/10 text-terracotta text-xs font-bold uppercase mb-4">Single Traveller</span>
+                        <h3 class="font-serif text-2xl font-bold text-warmdark mb-2">Standard B&amp;B Room</h3>
+                        <p class="text-sm text-warmdark/75 mb-6">Cozy, clean private room equipped with a comfortable bed, TV, and hot shower.</p>
+                        <ul class="space-y-2.5 text-sm text-warmdark/85 mb-8">
+                            <li class="flex items-center gap-2">✓ Comfortable Double Bed</li>
+                            <li class="flex items-center gap-2">✓ Private En-Suite Bathroom</li>
+                            <li class="flex items-center gap-2">✓ Complimentary Breakfast</li>
+                            <li class="flex items-center gap-2">✓ High-Speed Wi-Fi &amp; TV</li>
+                        </ul>
+                    </div>
+                    <button type="button" onclick="selectServiceAndScroll('Accommodation')" class="w-full py-3.5 px-5 rounded-xl border-2 border-terracotta text-terracotta font-bold text-sm hover:bg-terracotta hover:text-white transition-colors">
+                        Book Standard Room
+                    </button>
+                </div>
+
+                <div class="bg-warmdark text-white rounded-3xl p-8 shadow-2xl border-2 border-accent relative flex flex-col justify-between transform md:-translate-y-2">
+                    <div class="absolute -top-3.5 right-6 bg-accent text-warmdark text-xs font-extrabold uppercase px-3.5 py-1 rounded-full shadow">
+                        Most Popular
+                    </div>
+                    <div>
+                        <span class="inline-block px-3 py-1 rounded-full bg-white/15 text-accent text-xs font-bold uppercase mb-4">Executive Stay</span>
+                        <h3 class="font-serif text-2xl font-bold text-white mb-2">Executive Double Suite</h3>
+                        <p class="text-sm text-stone-300 mb-6">Spacious room featuring luxury bedding, garden views, and premium furnishings.</p>
+                        <ul class="space-y-2.5 text-sm text-stone-100 mb-8">
+                            <li class="flex items-center gap-2">✓ Queen Size Bed &amp; Fresh Linens</li>
+                            <li class="flex items-center gap-2">✓ En-Suite Hot Shower &amp; Toiletries</li>
+                            <li class="flex items-center gap-2">✓ Full Breakfast &amp; Room Service</li>
+                            <li class="flex items-center gap-2">✓ Secure Parking &amp; 24/7 Security</li>
+                        </ul>
+                    </div>
+                    <button type="button" onclick="selectServiceAndScroll('Accommodation')" class="w-full py-3.5 px-5 rounded-xl bg-accent hover:bg-white text-warmdark font-bold text-sm shadow-lg transition-colors">
+                        Book Executive Suite
+                    </button>
+                </div>
+
+                <div class="bg-sand rounded-3xl p-8 border border-stone-200 flex flex-col justify-between hover:shadow-xl transition-shadow">
+                    <div>
+                        <span class="inline-block px-3 py-1 rounded-full bg-terracotta/10 text-terracotta text-xs font-bold uppercase mb-4">Groups &amp; Families</span>
+                        <h3 class="font-serif text-2xl font-bold text-warmdark mb-2">Family &amp; Group Package</h3>
+                        <p class="text-sm text-warmdark/75 mb-6">Connected rooms and tailored full-board options for visiting families and corporate teams.</p>
+                        <ul class="space-y-2.5 text-sm text-warmdark/85 mb-8">
+                            <li class="flex items-center gap-2">✓ Multiple Interlocking Rooms</li>
+                            <li class="flex items-center gap-2">✓ Breakfast &amp; Dinner Included</li>
+                            <li class="flex items-center gap-2">✓ Dedicated Resort Assistance</li>
+                            <li class="flex items-center gap-2">✓ Lawn &amp; Gazebo Access</li>
+                        </ul>
+                    </div>
+                    <button type="button" onclick="selectServiceAndScroll('Accommodation')" class="w-full py-3.5 px-5 rounded-xl border-2 border-terracotta text-terracotta font-bold text-sm hover:bg-terracotta hover:text-white transition-colors">
+                        Inquire Group Package
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. BAR & RESTAURANT (images/1000055289.jpeg) -->
+    <section id="dining" class="py-20 sm:py-28 bg-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                <div class="lg:col-span-6 order-2 lg:order-1">
+                    <span class="inline-block text-xs font-bold uppercase tracking-[0.2em] text-terracotta mb-3">Bar &amp; Restaurant</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-warmdark leading-tight mb-6">
+                        Exquisite Dining Room &amp; Local Cuisine
+                    </h2>
+                    <p class="text-warmdark/85 text-base sm:text-lg leading-relaxed mb-6">
+                        Enjoy freshly prepared Kenyan and continental dishes in our elegant dining room. Featuring polished wood-and-white dining sets, gray-toned accent walls, and vibrant artwork, it provides the perfect ambiance for family meals and romantic dinners.
+                    </p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm">
+                            <h3 class="font-serif text-lg font-bold text-warmdark mb-1">Authentic Kenyan Delicacies</h3>
+                            <p class="text-sm text-warmdark/75">Tender nyama choma, kienyeji chicken, tilapia fish, ugali, and seasonal greens prepared by expert chefs.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm">
+                            <h3 class="font-serif text-lg font-bold text-warmdark mb-1">Well-Stocked Bar &amp; Refreshments</h3>
+                            <p class="text-sm text-warmdark/75">Ice-cold beers, wines, spirits, sodas, and fresh tropical juices served all day.</p>
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="selectServiceAndScroll('Bar & Restaurant')" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-terracotta text-white font-semibold text-sm hover:bg-terracotta-dark transition-colors shadow-md">
+                        <span>Reserve a Table</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </button>
+                </div>
+
+                <div class="lg:col-span-6 order-1 lg:order-2">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] bg-warmdark/10">
+                        <img 
+                            src="images/1000055289.jpeg" 
+                            data-photo-key="1000055289.jpeg"
+                            alt="Santa Barbara Resort Elegant Dining Room with White and Wooden Chairs" 
+                            onerror="handleImgError(this, 'images/1000055289.jpeg', 'Dining Room & Restaurant')"
+                            class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
+                        >
+                        <div class="absolute bottom-4 left-4 right-4 bg-warmdark/85 backdrop-blur-md text-white px-5 py-3.5 rounded-2xl flex items-center justify-between">
+                            <div>
+                                <p class="font-serif font-semibold text-sm">Santa Barbara Restaurant</p>
+                                <p class="text-xs text-stone-300">Lunch, Dinner &amp; Drinks</p>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-accent text-warmdark text-xs font-bold">Open Daily</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. GARDEN & OUTDOOR GAZEBO BAR (images/1000055287.jpeg) -->
+    <section id="gazebo" class="py-20 sm:py-28 bg-warmdark text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/15 aspect-[4/3] bg-warmdark">
+                        <img 
+                            src="images/1000055287.jpeg" 
+                            data-photo-key="1000055287.jpeg"
+                            alt="Santa Barbara Outdoor Gazebo Bar and Checkerboard Flooring" 
+                            onerror="handleImgError(this, 'images/1000055287.jpeg', 'Outdoor Gazebo Bar')"
+                            class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
+                        >
+                        <div class="absolute top-4 left-4 bg-accent text-warmdark text-xs font-extrabold uppercase px-3.5 py-1.5 rounded-full shadow">
+                            Open-Air Gazebo Bar
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <span class="inline-block text-xs font-bold uppercase tracking-[0.2em] text-accent mb-3">Garden &amp; Outdoor Bar</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+                        Unwind at Our Outdoor Gazebo &amp; Beer Garden
+                    </h2>
+                    <p class="text-stone-200 text-base sm:text-lg leading-relaxed mb-8">
+                        Experience the gentle breeze of Webuye at our wooden gazebo bar featuring stylish checkerboard flooring, outdoor seating, and chilled drinks. It's the ultimate spot to catch up with friends or enjoy afternoon drinks in the sunshine.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                        <div class="bg-white/10 backdrop-blur-sm border border-white/15 p-4 rounded-2xl">
+                            <h3 class="font-semibold text-accent text-base mb-1">Open-Air Seating</h3>
+                            <p class="text-sm text-stone-300">Surrounded by lush green lawns and fresh air.</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm border border-white/15 p-4 rounded-2xl">
+                            <h3 class="font-semibold text-accent text-base mb-1">Chill Drinks &amp; Music</h3>
+                            <p class="text-sm text-stone-300">Ice-cold beverages and relaxed weekend vibes.</p>
+                        </div>
+                    </div>
+
+                    <a href="tel:+254769925119" class="inline-flex items-center gap-2 px-7 py-4 rounded-xl bg-accent hover:bg-white text-warmdark font-bold text-sm shadow-lg transition-colors">
+                        <span>Call for Gazebo Reservations</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. LOUNGE & INDOOR COMFORT (images/1000055288.jpeg) -->
+    <section id="lounge" class="py-20 sm:py-28 bg-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="inline-block text-xs font-bold uppercase tracking-[0.2em] text-terracotta mb-3">Indoor Lounge &amp; Entertainment</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-warmdark leading-tight mb-6">
+                        Cozy Indoor Lounge with Flat-Screen TV &amp; Plush Seating
+                    </h2>
+                    <p class="text-warmdark/85 text-base sm:text-lg leading-relaxed mb-6">
+                        Step inside our modern indoor lounge furnished with luxurious black leather recliners, coffee tables, warm lighting, and a large flat-screen television. Whether you want to watch the latest news, sports, or movies, this is your home away from home.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-terracotta text-white font-semibold text-sm hover:bg-terracotta-dark transition-colors shadow-md">
+                            <span>Plan Your Visit</span>
+                        </a>
+                        <a href="tel:+254769925119" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl border border-terracotta/30 text-terracotta font-semibold text-sm hover:bg-terracotta/5 transition-colors">
+                            <span>Call 0769 925 119</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] bg-warmdark/10">
+                        <img 
+                            src="images/1000055288.jpeg" 
+                            data-photo-key="1000055288.jpeg"
+                            alt="Santa Barbara Resort Indoor Lounge with Leather Recliners and Flat-Screen TV" 
+                            onerror="handleImgError(this, 'images/1000055288.jpeg', 'Indoor Lounge & TV Area')"
+                            class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. PHOTO GALLERY + FULL-SCREEN LIGHTBOX -->
+    <section id="gallery" class="py-20 sm:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="inline-block text-xs font-bold uppercase tracking-[0.2em] text-terracotta mb-3">Visual Tour</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-warmdark mb-4">
+                    Explore Santa Barbara Resort
+                </h2>
+                <p class="text-warmdark/75 text-base sm:text-lg">
+                    Click any photograph below to open the full-screen lightbox gallery.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 1. Grounds -->
+                <button type="button" onclick="openLightbox(0)" class="group relative rounded-3xl overflow-hidden shadow-md aspect-[4/3] lg:col-span-2 lg:aspect-[16/9] text-left bg-warmdark/10 focus:outline-none focus:ring-4 focus:ring-terracotta">
+                    <img src="images/1000055291.jpeg" data-photo-key="1000055291.jpeg" alt="Resort Grounds" onerror="handleImgError(this, 'images/1000055291.jpeg', 'Resort Grounds & Exterior')" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent pointer-events-none"></div>
+                    <div class="absolute bottom-5 left-5 right-5 flex items-end justify-between text-white pointer-events-none">
+                        <div>
+                            <span class="text-xs uppercase tracking-wider text-accent font-bold">Grounds</span>
+                            <h3 class="font-serif text-xl font-bold">Main Exterior &amp; Lawns</h3>
+                        </div>
+                        <span class="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-accent group-hover:text-warmdark transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                        </span>
+                    </div>
+                </button>
+
+                <!-- 2. Signage -->
+                <button type="button" onclick="openLightbox(1)" class="group relative rounded-3xl overflow-hidden shadow-md aspect-[4/3] text-left bg-warmdark/10 focus:outline-none focus:ring-4 focus:ring-terracotta">
+                    <img src="images/1000055292.jpeg" data-photo-key="1000055292.jpeg" alt="Resort Signage" onerror="handleImgError(this, 'images/1000055292.jpeg', 'Resort Signage')" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent pointer-events-none"></div>
+                    <div class="absolute bottom-5 left-5 right-5 flex items-end justify-between text-white pointer-events-none">
+                        <div>
+                            <span class="text-xs uppercase tracking-wider text-accent font-bold">Signage</span>
+                            <h3 class="font-serif text-lg font-bold">Resort B&amp;B &amp; Restaurant Sign</h3>
+                        </div>
+                        <span class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-accent group-hover:text-warmdark transition-colors">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                        </span>
+                    </div>
+                </button>
+
+                <!-- 3. Main Building -->
+                <button type="button" onclick="openLightbox(2)" class="group relative rounded-3xl overflow-hidden shadow-md aspect-[4/3] text-left bg-warmdark/10 focus:outline-none focus:ring-4 focus:ring-terracotta">
+                    <img src="images/1000055290.jpeg" data-photo-key="1000055290.jpeg" alt="Main Building" onerror="handleImgError(this, 'images/1000055290.jpeg', 'Main Building')" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent pointer-events-none"></div>
+                    <div class="absolute bottom-5 left-5 right-5 flex items-end justify-between text-white pointer-events-none">
+                        <div>
+                            <span class="text-xs uppercase tracking-wider text-accent font-bold">Architecture</span>
+                            <h3 class="font-serif text-lg font-bold">Main Peach Building &amp; Veranda</h3>
+                        </div>
+                        <span class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-accent group-hover:text-warmdark transition-colors">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                        </span>
+                    </div>
+                </button>
+
+                <!-- 4. Dining Room -->
+                <button type="button" onclick="openLightbox(3)" class="group relative rounded-3xl overflow-hidden shadow-md aspect-[4/3] text-left bg-warmdark/10 focus:outline-none focus:ring-4 focus:ring-terracotta">
+                    <img src="images/1000055289.jpeg" data-photo-key="1000055289.jpeg" alt="Dining Room" onerror="handleImgError(this, 'images/1000055289.jpeg', 'Dining Room')" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent pointer-events-none"></div>
+                    <div class="absolute bottom-5 left-5 right-5 flex items-end justify-between text-white pointer-events-none">
+                        <div>
+                            <span class="text-xs uppercase tracking-wider text-accent font-bold">Dining</span>
+                            <h3 class="font-serif text-lg font-bold">Restaurant Dining Room</h3>
+                        </div>
+                        <span class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-accent group-hover:text-warmdark transition-colors">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                        </span>
+                    </div>
+                </button>
+
+                <!-- 5. Outdoor Bar -->
+                <button type="button" onclick="openLightbox(4)" class="group relative rounded-3xl overflow-hidden shadow-md aspect-[4/3] text-left bg-warmdark/10 focus:outline-none focus:ring-4 focus:ring-terracotta">
+                    <img src="images/1000055287.jpeg" data-photo-key="1000055287.jpeg" alt="Outdoor Bar" onerror="handleImgError(this, 'images/1000055287.jpeg', 'Outdoor Gazebo Bar')" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent pointer-events-none"></div>
+                    <div class="absolute bottom-5 left-5 right-5 flex items-end justify-between text-white pointer-events-none">
+                        <div>
+                            <span class="text-xs uppercase tracking-wider text-accent font-bold">Outdoor</span>
+                            <h3 class="font-serif text-lg font-bold">Gazebo Bar &amp; Checkerboard Deck</h3>
+                        </div>
+                        <span class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-accent group-hover:text-warmdark transition-colors">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                        </span>
+                    </div>
+                </button>
+
+                <!-- 6. Lounge -->
+                <button type="button" onclick="openLightbox(5)" class="group relative rounded-3xl overflow-hidden shadow-md aspect-[4/3] text-left bg-warmdark/10 focus:outline-none focus:ring-4 focus:ring-terracotta">
+                    <img src="images/1000055288.jpeg" data-photo-key="1000055288.jpeg" alt="Lounge" onerror="handleImgError(this, 'images/1000055288.jpeg', 'Indoor Lounge')" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent pointer-events-none"></div>
+                    <div class="absolute bottom-5 left-5 right-5 flex items-end justify-between text-white pointer-events-none">
+                        <div>
+                            <span class="text-xs uppercase tracking-wider text-accent font-bold">Lounge</span>
+                            <h3 class="font-serif text-lg font-bold">Indoor Lounge &amp; TV Room</h3>
+                        </div>
+                        <span class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-accent group-hover:text-warmdark transition-colors">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                        </span>
+                    </div>
+                </button>
+
+                <!-- 7. Location Sign -->
+                <button type="button" onclick="openLightbox(6)" class="group relative rounded-3xl overflow-hidden shadow-md aspect-[4/3] sm:col-span-2 lg:col-span-3 text-left bg-warmdark/10 focus:outline-none focus:ring-4 focus:ring-terracotta">
+                    <img src="images/1000055275.jpeg" data-photo-key="1000055275.jpeg" alt="Location Sign" onerror="handleImgError(this, 'images/1000055275.jpeg', 'Location & Entrance Road')" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent pointer-events-none"></div>
+                    <div class="absolute bottom-5 left-5 right-5 flex items-end justify-between text-white pointer-events-none">
+                        <div>
+                            <span class="text-xs uppercase tracking-wider text-accent font-bold">Location</span>
+                            <h3 class="font-serif text-xl font-bold">Webuye Entrance Road &amp; Signage</h3>
+                        </div>
+                        <span class="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-accent group-hover:text-warmdark transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                        </span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. BOOKING & CONTACT SECTION -->
+    <section id="contact" class="py-20 sm:py-28 bg-sand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <!-- Left Column: Direct Call & Info -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="inline-block text-xs font-bold uppercase tracking-[0.2em] text-terracotta mb-1">Reservations &amp; Contact</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-warmdark leading-tight">
+                        Book Your Stay or Table at Santa Barbara
+                    </h2>
+                    <p class="text-warmdark/80 text-base leading-relaxed">
+                        Send your inquiry directly to our management desk via WhatsApp or call us anytime for instant room availability and table bookings.
+                    </p>
+
+                    <div class="bg-warmdark text-white p-7 rounded-3xl shadow-xl border border-accent/30">
+                        <p class="text-xs uppercase tracking-widest text-accent font-bold mb-2">24/7 Front Desk &amp; WhatsApp</p>
+                        <a href="tel:+254769925119" class="block font-serif text-3xl sm:text-4xl font-bold text-white hover:text-accent transition-colors mb-2">
+                            0769 925 119
+                        </a>
+                        <p class="text-sm text-stone-300 mb-6">Direct Phone &amp; WhatsApp Inquiries</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <a href="tel:+254769925119" class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-accent text-warmdark font-bold text-sm hover:bg-white transition-colors">
+                                Call Now
+                            </a>
+                            <a href="https://wa.me/254769925119?text=Hello%20Santa%20Barbara%20Resort%20Webuye%2C%20I%20would%20like%20to%20inquire%20about%20a%20reservation." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-white/15 hover:bg-white/25 text-white font-semibold text-sm transition-colors">
+                                Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm space-y-3">
+                        <h3 class="font-serif text-lg font-bold text-warmdark">Resort Information</h3>
+                        <p class="text-sm text-warmdark/85"><strong>Location:</strong> Webuye, Bungoma County, Kenya</p>
+                        <p class="text-sm text-warmdark/85"><strong>Hours:</strong> Open 24 Hours Daily</p>
+                        <p class="text-sm text-warmdark/85"><strong>Services:</strong> Resort B&amp;B, Bar, Restaurant, Gazebo Bar</p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive WhatsApp Booking Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white rounded-3xl p-7 sm:p-10 shadow-xl border border-stone-200">
+                        <h3 class="font-serif text-2xl sm:text-3xl font-bold text-warmdark mb-2">Instant WhatsApp Reservation</h3>
+                        <p class="text-sm text-warmdark/70 mb-7">Fill out the form below to generate and send your booking message directly to <strong>0769 925 119</strong>.</p>
+
+                        <form id="reservation-form" class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="guestName" class="block text-xs font-bold uppercase tracking-wider text-warmdark mb-2">Guest Name *</label>
+                                    <input type="text" id="guestName" name="guestName" required placeholder="e.g., Brenda Wanjiku" class="w-full px-4 py-3 rounded-xl bg-sand border border-stone-300 text-warmdark focus:outline-none focus:border-terracotta">
+                                </div>
+                                <div>
+                                    <label for="guestPhone" class="block text-xs font-bold uppercase tracking-wider text-warmdark mb-2">Phone Number *</label>
+                                    <input type="tel" id="guestPhone" name="guestPhone" required placeholder="e.g., 0712 345 678" class="w-full px-4 py-3 rounded-xl bg-sand border border-stone-300 text-warmdark focus:outline-none focus:border-terracotta">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="serviceType" class="block text-xs font-bold uppercase tracking-wider text-warmdark mb-2">Service Type *</label>
+                                    <select id="serviceType" name="serviceType" class="w-full px-4 py-3 rounded-xl bg-sand border border-stone-300 text-warmdark focus:outline-none focus:border-terracotta">
+                                        <option value="Accommodation & B&B" selected>Accommodation &amp; B&amp;B</option>
+                                        <option value="Bar & Restaurant">Bar &amp; Restaurant Table</option>
+                                        <option value="Outdoor Gazebo Bar">Outdoor Gazebo Bar</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="guestCount" class="block text-xs font-bold uppercase tracking-wider text-warmdark mb-2">Number of Guests *</label>
+                                    <input type="number" id="guestCount" name="guestCount" min="1" max="100" value="2" required class="w-full px-4 py-3 rounded-xl bg-sand border border-stone-300 text-warmdark focus:outline-none focus:border-terracotta">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="checkInDate" class="block text-xs font-bold uppercase tracking-wider text-warmdark mb-2">Date / Check-In *</label>
+                                    <input type="date" id="checkInDate" name="checkInDate" required class="w-full px-4 py-3 rounded-xl bg-sand border border-stone-300 text-warmdark focus:outline-none focus:border-terracotta">
+                                </div>
+                                <div>
+                                    <label for="checkOutDate" class="block text-xs font-bold uppercase tracking-wider text-warmdark mb-2">Check-Out (Rooms)</label>
+                                    <input type="date" id="checkOutDate" name="checkOutDate" class="w-full px-4 py-3 rounded-xl bg-sand border border-stone-300 text-warmdark focus:outline-none focus:border-terracotta">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="specialRequests" class="block text-xs font-bold uppercase tracking-wider text-warmdark mb-2">Special Requests (Optional)</label>
+                                <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="e.g., Quiet room, dietary preferences, outdoor seating..." class="w-full px-4 py-3 rounded-xl bg-sand border border-stone-300 text-warmdark focus:outline-none focus:border-terracotta"></textarea>
+                            </div>
+
+                            <div class="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <button type="submit" class="w-full py-4 px-6 rounded-xl bg-terracotta hover:bg-terracotta-dark text-white font-bold text-sm shadow-lg flex items-center justify-center gap-2 transition-all">
+                                    <span>Book via WhatsApp (0769 925 119)</span>
+                                </button>
+                                <button type="button" id="preview-summary-btn" class="w-full py-4 px-6 rounded-xl bg-accent hover:bg-stone-300 text-warmdark font-bold text-sm shadow-md flex items-center justify-center gap-2 transition-all">
+                                    <span>Preview Booking Message</span>
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Formatted WhatsApp Confirmation Box -->
+                        <div id="confirmation-box" class="hidden mt-8 p-6 rounded-2xl bg-terracotta/5 border-2 border-terracotta text-warmdark">
+                            <div class="flex items-start justify-between gap-4 mb-3">
+                                <h4 class="font-serif text-xl font-bold text-warmdark">Formatted WhatsApp Message</h4>
+                                <button type="button" onclick="document.getElementById('confirmation-box').classList.add('hidden')" class="text-xs font-semibold text-warmdark/60 hover:text-warmdark">Close</button>
+                            </div>
+                            <p id="summary-text" class="text-sm text-warmdark/90 whitespace-pre-line bg-white p-4 rounded-xl border border-stone-200 mb-4 font-mono"></p>
+                            <div class="flex flex-wrap items-center gap-3">
+                                <a id="summary-whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-terracotta text-white text-xs font-bold hover:bg-terracotta-dark transition-colors">
+                                    Send Now on WhatsApp
+                                </a>
+                                <button type="button" id="copy-summary-btn" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-terracotta text-terracotta text-xs font-bold hover:bg-terracotta/10 transition-colors">
+                                    Copy Message
+                                </button>
+                                <span id="copy-feedback" class="hidden text-xs font-semibold text-terracotta">Copied to clipboard!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-warmdark text-stone-300 pt-16 pb-10 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-terracotta text-white flex items-center justify-center border border-accent/30">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="block font-serif text-xl font-bold text-white">Santa Barbara Resort</span>
+                            <span class="block text-xs uppercase tracking-widest text-accent">Webuye, Kenya</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-stone-300/90 max-w-md leading-relaxed mb-6">
+                        A premier hospitality haven in Webuye offering comfortable Resort B&amp;B rooms, a lively bar &amp; restaurant, outdoor gazebo bar, and lush garden grounds.
+                    </p>
+                    <a href="tel:+254769925119" class="inline-flex items-center gap-2.5 px-5 py-3 rounded-xl bg-accent text-warmdark font-bold text-sm hover:bg-white transition-colors">
+                        <span>Call / WhatsApp: 0769 925 119</span>
+                    </a>
+                </div>
+
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#home" class="hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="#accommodation" class="hover:text-accent transition-colors">Accommodation</a></li>
+                        <li><a href="#dining" class="hover:text-accent transition-colors">Bar &amp; Restaurant</a></li>
+                        <li><a href="#gazebo" class="hover:text-accent transition-colors">Gazebo Bar</a></li>
+                        <li><a href="#gallery" class="hover:text-accent transition-colors">Photo Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-white mb-4">Contact Info</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li>Webuye, Bungoma County, Kenya</li>
+                        <li><a href="tel:+254769925119" class="hover:text-accent font-semibold text-white">0769 925 119</a></li>
+                        <li>Open 24 Hours Daily</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400">
+                <p>&copy; <span id="current-year">2026</span> Santa Barbara Resort, Webuye, Kenya. All rights reserved.</p>
+                <p>Exceptional Hospitality &amp; Dining.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FULL-SCREEN LIGHTBOX MODAL -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-md flex items-center justify-center p-4" role="dialog" aria-modal="true">
+        <button type="button" onclick="closeLightbox()" aria-label="Close Lightbox" class="absolute top-5 right-5 w-11 h-11 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center text-xl transition-colors">✕</button>
+        <button type="button" onclick="navigateLightbox(-1)" aria-label="Previous Photo" class="absolute left-3 sm:left-6 w-11 h-11 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center text-2xl transition-colors">‹</button>
+
+        <div class="max-w-4xl w-full text-center">
+            <img id="lightbox-img" src="" alt="" class="max-h-[75vh] w-auto mx-auto rounded-2xl shadow-2xl border border-white/15 object-contain">
+            <div class="mt-4 text-white">
+                <span id="lightbox-category" class="text-xs uppercase tracking-widest text-accent font-bold"></span>
+                <h3 id="lightbox-title" class="font-serif text-xl sm:text-2xl font-bold mt-1"></h3>
+                <p id="lightbox-counter" class="text-xs text-stone-400 mt-1"></p>
+            </div>
+        </div>
+
+        <button type="button" onclick="navigateLightbox(1)" aria-label="Next Photo" class="absolute right-3 sm:right-6 w-11 h-11 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center text-2xl transition-colors">›</button>
+    </div>
+
+    <!-- BUILT-IN CANVAS PHOTO PREVIEW MANAGER -->
+    <div id="photo-preview-widget" class="fixed bottom-4 left-4 z-40 flex items-center gap-1.5 bg-warmdark/95 backdrop-blur-md text-white pl-3.5 pr-2 py-2 rounded-full shadow-2xl border border-accent/40">
+        <button type="button" onclick="togglePhotoDrawer(true)" class="flex items-center gap-2 text-xs font-semibold hover:text-accent transition-colors">
+            <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <span>Preview Local Photos</span>
+        </button>
+        <button type="button" onclick="document.getElementById('photo-preview-widget').classList.add('hidden')" aria-label="Hide button" class="w-6 h-6 rounded-full hover:bg-white/15 flex items-center justify-center text-stone-300 hover:text-white text-xs">
+            ✕
+        </button>
+    </div>
+
+    <!-- Slide-Over Photo Loader Drawer -->
+    <div id="photo-drawer-backdrop" onclick="togglePhotoDrawer(false)" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-xs"></div>
+    <aside id="photo-drawer" class="fixed top-0 left-0 bottom-0 z-50 w-full max-w-md bg-sand shadow-2xl border-r border-stone-300 transform -translate-x-full transition-transform duration-300 flex flex-col">
+        <div class="p-6 bg-terracotta text-white flex items-center justify-between">
+            <div>
+                <span class="text-[11px] uppercase tracking-widest text-accent font-bold">GitHub Images Manager</span>
+                <h3 class="font-serif text-xl font-bold">Load Your 7 Resort Photos</h3>
+            </div>
+            <button type="button" onclick="togglePhotoDrawer(false)" class="w-9 h-9 rounded-full bg-white/15 hover:bg-white/25 flex items-center justify-center text-white">✕</button>
+        </div>
+
+        <div class="p-6 overflow-y-auto space-y-6 flex-1">
+            <p class="text-xs text-warmdark/80 leading-relaxed">
+                To have your photos display on GitHub &amp; Vercel, create an <code class="bg-stone-200 px-1.5 py-0.5 rounded font-mono text-terracotta">images/</code> folder and upload them with these exact filenames. To preview them instantly here in your browser, select them below:
+            </p>
+
+            <!-- Bulk Multi-File Auto-Matcher -->
+            <div class="p-4 rounded-2xl bg-terracotta/5 border-2 border-dashed border-terracotta/30 text-center">
+                <label class="cursor-pointer block">
+                    <span class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-terracotta text-white text-xs font-bold hover:bg-terracotta-dark transition-colors shadow">
+                        <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                        <span>Select All 7 Photos at Once</span>
+                    </span>
+                    <input type="file" id="bulk-photo-input" accept="image/*" multiple class="hidden" onchange="handleBulkPhotoSelect(event)">
+                    <span class="block text-[11px] text-warmdark/65 mt-2">Auto-matches filenames 1000055291, 1000055292, 1000055290, 1000055289, 1000055287, 1000055288, 1000055275</span>
+                </label>
+                <p id="bulk-status" class="hidden text-xs font-semibold text-terracotta mt-2"></p>
+            </div>
+
+            <!-- Individual Slots -->
+            <div class="space-y-3">
+                <p class="text-xs font-bold uppercase tracking-wider text-warmdark">Individual Image Slots:</p>
+
+                <div class="p-3.5 rounded-2xl bg-white border border-stone-200 flex items-center justify-between gap-3">
+                    <div class="min-w-0">
+                        <p class="text-xs font-bold text-warmdark truncate">1. Hero / Grounds</p>
+                        <p class="text-[11px] font-mono text-warmdark/60 truncate">images/1000055291.jpeg</p>
+                    </div>
+                    <label class="shrink-0 cursor-pointer px-3 py-2 rounded-xl bg-sand hover:bg-accent/20 text-warmdark text-xs font-bold border border-stone-300">
+                        <span id="status-1000055291.jpeg">Choose</span>
+                        <input type="file" accept="image/*" class="hidden" onchange="applySinglePhoto('1000055291.jpeg', this.files[0])">
+                    </label>
+                </div>
+
+                <div class="p-3.5 rounded-2xl bg-white border border-stone-200 flex items-center justify-between gap-3">
+                    <div class="min-w-0">
+                        <p class="text-xs font-bold text-warmdark truncate">2. Signage</p>
+                        <p class="text-[11px] font-mono text-warmdark/60 truncate">images/1000055292.jpeg</p>
+                    </div>
+                    <label class="shrink-0 cursor-pointer px-3 py-2 rounded-xl bg-sand hover:bg-accent/20 text-warmdark text-xs font-bold border border-stone-300">
+                        <span id="status-1000055292.jpeg">Choose</span>
+                        <input type="file" accept="image/*" class="hidden" onchange="applySinglePhoto('1000055292.jpeg', this.files[0])">
+                    </label>
+                </div>
+
+                <div class="p-3.5 rounded-2xl bg-white border border-stone-200 flex items-center justify-between gap-3">
+                    <div class="min-w-0">
+                        <p class="text-xs font-bold text-warmdark truncate">3. Main Building</p>
+                        <p class="text-[11px] font-mono text-warmdark/60 truncate">images/1000055290.jpeg</p>
+                    </div>
+                    <label class="shrink-0 cursor-pointer px-3 py-2 rounded-xl bg-sand hover:bg-accent/20 text-warmdark text-xs font-bold border border-stone-300">
+                        <span id="status-1000055290.jpeg">Choose</span>
+                        <input type="file" accept="image/*" class="hidden" onchange="applySinglePhoto('1000055290.jpeg', this.files[0])">
+                    </label>
+                </div>
+
+                <div class="p-3.5 rounded-2xl bg-white border border-stone-200 flex items-center justify-between gap-3">
+                    <div class="min-w-0">
+                        <p class="text-xs font-bold text-warmdark truncate">4. Dining Room</p>
+                        <p class="text-[11px] font-mono text-warmdark/60 truncate">images/1000055289.jpeg</p>
+                    </div>
+                    <label class="shrink-0 cursor-pointer px-3 py-2 rounded-xl bg-sand hover:bg-accent/20 text-warmdark text-xs font-bold border border-stone-300">
+                        <span id="status-1000055289.jpeg">Choose</span>
+                        <input type="file" accept="image/*" class="hidden" onchange="applySinglePhoto('1000055289.jpeg', this.files[0])">
+                    </label>
+                </div>
+
+                <div class="p-3.5 rounded-2xl bg-white border border-stone-200 flex items-center justify-between gap-3">
+                    <div class="min-w-0">
+                        <p class="text-xs font-bold text-warmdark truncate">5. Outdoor Gazebo Bar</p>
+                        <p class="text-[11px] font-mono text-warmdark/60 truncate">images/1000055287.jpeg</p>
+                    </div>
+                    <label class="shrink-0 cursor-pointer px-3 py-2 rounded-xl bg-sand hover:bg-accent/20 text-warmdark text-xs font-bold border border-stone-300">
+                        <span id="status-1000055287.jpeg">Choose</span>
+                        <input type="file" accept="image/*" class="hidden" onchange="applySinglePhoto('1000055287.jpeg', this.files[0])">
+                    </label>
+                </div>
+
+                <div class="p-3.5 rounded-2xl bg-white border border-stone-200 flex items-center justify-between gap-3">
+                    <div class="min-w-0">
+                        <p class="text-xs font-bold text-warmdark truncate">6. Lounge</p>
+                        <p class="text-[11px] font-mono text-warmdark/60 truncate">images/1000055288.jpeg</p>
+                    </div>
+                    <label class="shrink-0 cursor-pointer px-3 py-2 rounded-xl bg-sand hover:bg-accent/20 text-warmdark text-xs font-bold border border-stone-300">
+                        <span id="status-1000055288.jpeg">Choose</span>
+                        <input type="file" accept="image/*" class="hidden" onchange="applySinglePhoto('1000055288.jpeg', this.files[0])">
+                    </label>
+                </div>
+
+                <div class="p-3.5 rounded-2xl bg-white border border-stone-200 flex items-center justify-between gap-3">
+                    <div class="min-w-0">
+                        <p class="text-xs font-bold text-warmdark truncate">7. Location Sign</p>
+                        <p class="text-[11px] font-mono text-warmdark/60 truncate">images/1000055275.jpeg</p>
+                    </div>
+                    <label class="shrink-0 cursor-pointer px-3 py-2 rounded-xl bg-sand hover:bg-accent/20 text-warmdark text-xs font-bold border border-stone-300">
+                        <span id="status-1000055275.jpeg">Choose</span>
+                        <input type="file" accept="image/*" class="hidden" onchange="applySinglePhoto('1000055275.jpeg', this.files[0])">
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 bg-white border-t border-stone-300">
+            <button type="button" onclick="togglePhotoDrawer(false)" class="w-full py-3 rounded-xl bg-terracotta text-white text-xs font-bold hover:bg-terracotta-dark transition-colors">
+                Done &amp; View Website
+            </button>
+        </div>
+    </aside>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Styled SVG Fallback Generator for missing images
+        function handleImgError(imgEl, expectedPath, label) {
+            imgEl.onerror = null;
+            const svg = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+                    <defs>
+                        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#C85A32"/>
+                            <stop offset="100%" stop-color="#9A3F1B"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="800" height="600" fill="url(#g)"/>
+                    <rect x="36" y="36" width="728" height="528" rx="24" fill="none" stroke="#D4A373" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="10 8"/>
+                    <text x="400" y="260" text-anchor="middle" fill="#FDF8F2" font-family="Georgia, serif" font-size="26" font-weight="bold">${label}</text>
+                    <text x="400" y="305" text-anchor="middle" fill="#D4A373" font-family="monospace" font-size="18">Path: ${expectedPath}</text>
+                    <text x="400" y="345" text-anchor="middle" fill="#F4ECE1" font-family="sans-serif" font-size="14">Upload to 'images/' folder in your GitHub repo</text>
+                </svg>
+            `;
+            imgEl.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+        }
+
+        // Date Initialization
+        (function() {
+            try {
+                const today = new Date();
+                const tomorrow = new Date(today);
+                tomorrow.setDate(tomorrow.getDate() + 1);
+                const fmt = d => d.toISOString().split('T')[0];
+                document.getElementById('checkInDate').min = fmt(today);
+                document.getElementById('checkInDate').value = fmt(today);
+                document.getElementById('checkOutDate').min = fmt(tomorrow);
+                document.getElementById('checkOutDate').value = fmt(tomorrow);
+            } catch (e) {}
+        })();
+
+        // Mobile Menu Drawer
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('menu-icon-open');
+        const iconClose = document.getElementById('menu-icon-close');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            mobileMenu.classList.toggle('hidden');
+            iconOpen.classList.toggle('hidden', !isHidden);
+            iconClose.classList.toggle('hidden', isHidden);
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                iconOpen.classList.remove('hidden');
+                iconClose.classList.add('hidden');
+            });
+        });
+
+        // Pre-select service and scroll
+        function selectServiceAndScroll(serviceName) {
+            const select = document.getElementById('serviceType');
+            for (let i = 0; i < select.options.length; i++) {
+                if (select.options[i].value === serviceName) {
+                    select.selectedIndex = i;
+                    break;
+                }
+            }
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Gallery Data Array
+        const galleryItems = [
+            { key: '1000055291.jpeg', src: 'images/1000055291.jpeg', category: 'Grounds', title: 'Main Exterior & Lawns' },
+            { key: '1000055292.jpeg', src: 'images/1000055292.jpeg', category: 'Signage', title: 'Resort B&B & Restaurant Sign' },
+            { key: '1000055290.jpeg', src: 'images/1000055290.jpeg', category: 'Architecture', title: 'Main Peach Building & Veranda' },
+            { key: '1000055289.jpeg', src: 'images/1000055289.jpeg', category: 'Dining', title: 'Restaurant Dining Room' },
+            { key: '1000055287.jpeg', src: 'images/1000055287.jpeg', category: 'Outdoor', title: 'Gazebo Bar & Checkerboard Deck' },
+            { key: '1000055288.jpeg', src: 'images/1000055288.jpeg', category: 'Lounge', title: 'Indoor Lounge & TV Room' },
+            { key: '1000055275.jpeg', src: 'images/1000055275.jpeg', category: 'Location', title: 'Webuye Entrance Road & Signage' }
+        ];
+
+        // Canvas Photo Preview Manager
+        function togglePhotoDrawer(open) {
+            const drawer = document.getElementById('photo-drawer');
+            const backdrop = document.getElementById('photo-drawer-backdrop');
+            if (open) {
+                backdrop.classList.remove('hidden');
+                drawer.classList.remove('-translate-x-full');
+            } else {
+                drawer.classList.add('-translate-x-full');
+                backdrop.classList.add('hidden');
+            }
+        }
+
+        function applySinglePhoto(photoKey, file) {
+            if (!file) return;
+            const objectUrl = URL.createObjectURL(file);
+
+            document.querySelectorAll(`img[data-photo-key="${photoKey}"]`).forEach(img => {
+                img.src = objectUrl;
+            });
+
+            const entry = galleryItems.find(item => item.key === photoKey);
+            if (entry) entry.src = objectUrl;
+
+            const badge = document.getElementById(`status-${photoKey}`);
+            if (badge) {
+                badge.textContent = 'Loaded ✓';
+                badge.parentElement.classList.add('bg-terracotta', 'text-white', 'border-terracotta');
+            }
+        }
+
+        function handleBulkPhotoSelect(event) {
+            const files = Array.from(event.target.files || []);
+            if (!files.length) return;
+
+            const keys = ['1000055291.jpeg', '1000055292.jpeg', '1000055290.jpeg', '1000055289.jpeg', '1000055287.jpeg', '1000055288.jpeg', '1000055275.jpeg'];
+            let count = 0;
+
+            files.forEach(file => {
+                const lower = file.name.toLowerCase();
+                const matched = keys.find(k => lower.includes(k.replace('.jpeg', '')));
+                if (matched) {
+                    applySinglePhoto(matched, file);
+                    count++;
+                }
+            });
+
+            if (count === 0) {
+                files.slice(0, 7).forEach((file, idx) => {
+                    applySinglePhoto(keys[idx], file);
+                    count++;
+                });
+            }
+
+            const status = document.getElementById('bulk-status');
+            status.textContent = `Loaded ${count} photo(s) successfully!`;
+            status.classList.remove('hidden');
+        }
+
+        // Lightbox Modal
+        let currentSlide = 0;
+        const modal = document.getElementById('lightbox-modal');
+        const lbImg = document.getElementById('lightbox-img');
+        const lbCat = document.getElementById('lightbox-category');
+        const lbTitle = document.getElementById('lightbox-title');
+        const lbCount = document.getElementById('lightbox-counter');
+
+        function openLightbox(idx) {
+            currentSlide = idx;
+            updateLightbox();
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        function navigateLightbox(dir) {
+            currentSlide = (currentSlide + dir + galleryItems.length) % galleryItems.length;
+            updateLightbox();
+        }
+
+        function updateLightbox() {
+            const item = galleryItems[currentSlide];
+            lbImg.src = item.src;
+            lbImg.alt = item.title;
+            lbCat.textContent = item.category;
+            lbTitle.textContent = item.title;
+            lbCount.textContent = `Photo ${currentSlide + 1} of ${galleryItems.length}`;
+        }
+
+        document.addEventListener('keydown', e => {
+            if (!modal.classList.contains('hidden')) {
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowRight') navigateLightbox(1);
+                if (e.key === 'ArrowLeft') navigateLightbox(-1);
+            }
+        });
+
+        modal.addEventListener('click', e => {
+            if (e.target === modal) closeLightbox();
+        });
+
+        // WhatsApp Form Logic
+        const form = document.getElementById('reservation-form');
+        const previewBtn = document.getElementById('preview-summary-btn');
+        const confBox = document.getElementById('confirmation-box');
+        const sumText = document.getElementById('summary-text');
+        const sumWaLink = document.getElementById('summary-whatsapp-link');
+        const copyBtn = document.getElementById('copy-summary-btn');
+        const copyFb = document.getElementById('copy-feedback');
+
+        function buildBookingDetails() {
+            const name = document.getElementById('guestName').value.trim() || 'Guest';
+            const phone = document.getElementById('guestPhone').value.trim() || 'Not provided';
+            const service = document.getElementById('serviceType').value;
+            const guests = document.getElementById('guestCount').value;
+            const checkIn = document.getElementById('checkInDate').value;
+            const checkOut = document.getElementById('checkOutDate').value;
+            const requests = document.getElementById('specialRequests').value.trim();
+
+            let msg = `Hello Santa Barbara Resort (Webuye),\nI would like to make a reservation:\n\n`;
+            msg += `• Guest Name: ${name}\n`;
+            msg += `• Phone Number: ${phone}\n`;
+            msg += `• Service Type: ${service}\n`;
+            msg += `• Number of Guests: ${guests}\n`;
+            msg += `• Date / Check-In: ${checkIn}\n`;
+            if (checkOut) msg += `• Check-Out: ${checkOut}\n`;
+            if (requests) msg += `• Special Requests: ${requests}\n`;
+            msg += `\nPlease confirm availability. Thank you!`;
+
+            const url = `https://wa.me/254769925119?text=${encodeURIComponent(msg)}`;
+            return { msg, url };
+        }
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            const { msg, url } = buildBookingDetails();
+            sumText.textContent = msg;
+            sumWaLink.href = url;
+            confBox.classList.remove('hidden');
+            window.open(url, '_blank', 'noopener,noreferrer');
+        });
+
+        previewBtn.addEventListener('click', () => {
+            const { msg, url } = buildBookingDetails();
+            sumText.textContent = msg;
+            sumWaLink.href = url;
+            confBox.classList.remove('hidden');
+            confBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+
+        copyBtn.addEventListener('click', () => {
+            try {
+                const ta = document.createElement('textarea');
+                ta.value = sumText.textContent;
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+                copyFb.classList.remove('hidden');
+                setTimeout(() => copyFb.classList.add('hidden'), 2500);
+            } catch (err) {}
+        });
+    </script>
+</body>
+</html>
+```
